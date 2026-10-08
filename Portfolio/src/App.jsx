@@ -3,6 +3,8 @@ import Footer from "./Footer"
 import About from "./About"
 import Fortune from "./Fortune"
 import ProjectCount from "./ProjectCount"
+import Data from "./Data"
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <About />
       <Fortune />
       <ProjectCount />
+      <Data />
       <Footer />
     </div>
   )
