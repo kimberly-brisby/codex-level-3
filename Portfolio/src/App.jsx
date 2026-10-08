@@ -19,7 +19,10 @@ function Fortune() {
   return <p>{ fortunes }  </p>
 }
 
-
+function ProjectCount(){
+  let projects = ["header", "footer", "about"]
+  return <p>There are {projects.length} projects in this portfolio.</p>
+}
 
 
 
@@ -30,7 +33,7 @@ function App() {
       <p>I am learning to code.</p>
       <About />
       <Fortune />
-
+      <ProjectCount />
       <Footer />
     </div>
   )
