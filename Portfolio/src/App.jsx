@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Header />
-      <p>Pokémon trainer from Pallet Town.</p>
+      <p>I am learning to code.</p>
     </div>
   )
 }
