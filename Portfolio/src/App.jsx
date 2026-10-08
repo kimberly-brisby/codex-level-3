@@ -1,4 +1,6 @@
 import Header from "./Header"
+import Footer from "./Footer"
+import About from "./About"
 
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
@@ -18,10 +20,7 @@ function Fortune() {
 }
 
 
-function Footer() {
-  let year = new Date().getFullYear()
-  return <p>&copy; {year} Kimberly Brisby</p>
-}
+
 
 
 function App() {
@@ -29,6 +28,7 @@ function App() {
     <div>
       <Header />
       <p>I am learning to code.</p>
+      <About />
       <Fortune />
 
       <Footer />
