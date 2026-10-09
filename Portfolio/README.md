@@ -11,7 +11,7 @@ A React site that shows the projects I built in Level 2.
 | `Header` | my name and a line about me | typed into the JSX |
 | `Fortune` | a random fortune | a list and `randomNumber` |
 | `Footer` | &copy; and the current year | the year the page is opened |
-| `DataPlaylistPortfolioCard` | one project: its name, description, and two links | variables inside the component |
+| `CapstonePortfolioCard` | one project: its name, description, and two links | variables inside the component |
 |  |  |  |
 
 ## What I'm adding next

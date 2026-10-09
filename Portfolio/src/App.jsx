@@ -3,7 +3,8 @@ import Footer from "./Footer"
 import About from "./About"
 import Fortune from "./Fortune"
 import ProjectCount from "./ProjectCount"
-import Data from "./Data"
+import Data from "./Capstone.jsx"
+import HelloWorld from "./HelloWorld.jsx"
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Fortune />
       <ProjectCount />
       <Data />
+      <HelloWorld />
       <Footer />
     </div>
   )

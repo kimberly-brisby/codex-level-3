@@ -1,4 +1,4 @@
-function DataPlaylistPortfolioCard() {
+function Data() {
   let name = "Homeschool Project"
   let description = "A few homeschool resources from my data API."
   let liveUrl = "https://kimberly-brisby.github.io/Capstone-level-2/"
@@ -14,4 +14,4 @@ function DataPlaylistPortfolioCard() {
   )
 }
 
-export default DataPlaylistPortfolioCard
+export default Data
