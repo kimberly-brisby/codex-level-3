@@ -2,6 +2,10 @@
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
+const randomArrow = (min, max) => {
+    math.floor(Math,random() * (max - min + 1)) + min
+}
+
 function Fortune() {
   const fortunes = [
     "You will have a great day!",
