@@ -1,6 +1,15 @@
+
 function Footer() {
   let year = new Date().getFullYear()
-  return <p>&copy; {year} Kimberly Brisby</p>
+  let githubLink = <a href='https://github.com/kimberly-brisby'>GitHub</a>
+  return (
+     <div>
+    <p>&copy; {year} Kimberly Brisby</p>
+    <p>{ githubLink }</p>
+  </div>
+  )
+   
+
 }
 
 export default Footer

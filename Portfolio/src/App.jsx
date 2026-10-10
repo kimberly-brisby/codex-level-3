@@ -8,16 +8,20 @@ import HelloWorld from "./HelloWorld.jsx"
 
 
 
+
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <p>I am learning to code.</p>
       <About />
       <Fortune />
       <ProjectCount />
-      <Data />
-      <HelloWorld />
+      <div className="grid">
+        <Data />
+        <HelloWorld />
+      </div>
+      
       <Footer />
     </div>
   )
