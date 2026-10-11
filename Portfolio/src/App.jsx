@@ -11,6 +11,7 @@ import Contact from "./Contact.jsx"
 import Greeting from "./Greeting.jsx"
 import Links from "./Links.jsx"
 import Nav from "./Nav.jsx"
+import Hero from "./Hero.jsx"
 
 
 
@@ -19,6 +20,7 @@ function App() {
     <div className="container">
       <Nav />
       <Header />
+      <Hero />
       <p>I am learning to code.</p>
       <Greeting />
       <About />
