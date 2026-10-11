@@ -5,7 +5,11 @@ import Fortune from "./Fortune"
 import ProjectCount from "./ProjectCount"
 import Data from "./Capstone.jsx"
 import HelloWorld from "./HelloWorld.jsx"
-
+import './flex-container.css'
+import Skills from "./Skills.jsx"
+import Contact from "./Contact.jsx"
+import Greeting from "./Greeting.jsx"
+import Links from "./Links.jsx"
 
 
 
@@ -14,14 +18,17 @@ function App() {
     <div className="container">
       <Header />
       <p>I am learning to code.</p>
+      <Greeting />
       <About />
       <Fortune />
       <ProjectCount />
-      <div className="grid">
+      <Skills />
+      <div className="flex-container">
         <Data />
         <HelloWorld />
       </div>
-      
+      <Contact />
+      <Links />
       <Footer />
     </div>
   )
