@@ -12,6 +12,7 @@ import Greeting from "./Greeting.jsx"
 import Links from "./Links.jsx"
 import Nav from "./Nav.jsx"
 import Hero from "./Hero.jsx"
+import Gallery from "./Gallery.jsx"
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <div className="flex-container">
         <Data />
         <HelloWorld />
+        <Gallery />
       </div>
       <Contact />
       <Links />

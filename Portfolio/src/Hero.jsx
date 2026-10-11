@@ -1,11 +1,11 @@
-import imageUrl from './image-url.js'
+import heroPhoto from './heroPhoto.js'
 import './hero.css'
 
 function Hero() {
-  const src = imageUrl(1200, 500)
+  const [src,alt] = heroPhoto(1200, 500, "cherry blossoms")
   return (
-    <div className="cherry blossoms">
-      <img src={src} alt="Cherry Blossom" />
+    <div className="hero">
+      <img src={src} alt={alt} />
     </div>
   )
 }

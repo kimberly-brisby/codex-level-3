@@ -1,8 +1,8 @@
 function Data() {
-  let name = "Homeschool Project"
-  let description = "A project that discusses and provides homeschooling resources."
-  let liveUrl = "https://kimberly-brisby.github.io/Capstone-level-2/"
-  let repoUrl = "https://github.com/kimberly-brisby/Capstone-level-2.git"
+  const name = "Homeschool Project"
+  const description = "A project that discusses and provides homeschooling resources."
+  const liveUrl = "https://kimberly-brisby.github.io/Capstone-level-2/"
+  const repoUrl = "https://github.com/kimberly-brisby/Capstone-level-2.git"
   return (
     <article className="card-azure">
       <h2>{name}</h2>

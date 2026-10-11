@@ -1,6 +1,6 @@
 
 function Footer() {
-  let year = new Date().getFullYear()
+  const year = new Date().getFullYear()
   
   return (
      <div>
