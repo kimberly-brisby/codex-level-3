@@ -3,7 +3,7 @@
 }
 
 const randomArrow = (min, max) => {
-    math.floor(Math,random() * (max - min + 1)) + min
+    return math.floor(Math,random() * (max - min + 1)) + min
 }
 
 function Fortune() {

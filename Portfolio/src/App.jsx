@@ -10,12 +10,14 @@ import Skills from "./Skills.jsx"
 import Contact from "./Contact.jsx"
 import Greeting from "./Greeting.jsx"
 import Links from "./Links.jsx"
+import Nav from "./Nav.jsx"
 
 
 
 function App() {
   return (
     <div className="container">
+      <Nav />
       <Header />
       <p>I am learning to code.</p>
       <Greeting />
