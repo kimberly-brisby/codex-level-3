@@ -3,10 +3,10 @@ import heroPhoto from './heroPhoto.js'
 import './hero.css'
 
 function Hero() {
-const [saturation, setSaturation] = useState(100)
+const [saturation, setSaturation] = useState(0)
 
 const showColor = () => {
-  setSaturation(100)
+  setSaturation(0)
 }
 
 const showBlackAndWhite = () => {
