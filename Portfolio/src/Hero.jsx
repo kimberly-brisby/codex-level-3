@@ -3,19 +3,19 @@ import heroPhoto from './heroPhoto.js'
 import './hero.css'
 
 function Hero() {
-const [sat, setSat] = useState(0)
+const [saturation, setSaturation] = useState(100)
 
 const showColor = () => {
-  setSat(0)
+  setSaturation(100)
 }
 
 const showBlackAndWhite = () => {
-  setSat(-100)
+  setSaturation(-100)
 }
 
 
 
-  const [src,alt] = heroPhoto(1200, 500, sat, "cherry blossoms")
+  const [src,alt] = heroPhoto(1200, 500, saturation, "cherry blossoms")
 
 
  return (
@@ -24,9 +24,9 @@ const showBlackAndWhite = () => {
       <img src={src} alt={alt} />
     </div>
     <p>
-      <button onClick={showColor}>Color</button>
+      <button onClick={ showColor }>Color</button>
       &nbsp;
-      <button onClick={showBlackAndWhite}>Black and White</button>
+      <button onClick={ showBlackAndWhite }>Black and White</button>
     </p>
   </div>
 )

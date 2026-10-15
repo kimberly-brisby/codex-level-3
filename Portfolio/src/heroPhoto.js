@@ -1,7 +1,7 @@
 import imageUrl from "./image-url";
 
-const heroPhoto = (width, height, sat, description) =>{
-    const src = imageUrl(width, height , sat)
+const heroPhoto = (width, height, sepia,saturation, description) =>{
+    const src = imageUrl(width, height, sepia, saturation)
     const alt = description
         return [src,alt]
     
