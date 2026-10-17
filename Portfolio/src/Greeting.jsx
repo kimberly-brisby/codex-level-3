@@ -1,6 +1,6 @@
 function Greeting() {
   const hour = new Date().getHours()
-  const greeting = "Good evening"
+  let greeting = "Good evening"
   if (hour < 12) {
     greeting = "Good morning"
   } else if (hour < 6) {
