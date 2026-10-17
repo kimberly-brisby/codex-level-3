@@ -28,6 +28,8 @@ const descriptions = [
   
 ]
 
+const [index, setIndex] = useState(0)
+
 const nextPhoto = () => {
   if (index === photos.length - 1) {
     setIndex(0)
