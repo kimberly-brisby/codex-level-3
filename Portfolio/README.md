@@ -16,7 +16,10 @@ A React site that shows the projects I built in Level 2.
 
 ## What I'm adding next
 
--
+-- Color and Black and White buttons on my hero
+- a New Fortune button
+- a Like button on every card
+
 
 ## Built with
 

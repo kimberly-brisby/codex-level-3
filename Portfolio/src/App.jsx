@@ -9,7 +9,7 @@ import './flex-container.css'
 import Skills from "./Skills.jsx"
 import Contact from "./Contact.jsx"
 import Greeting from "./Greeting.jsx"
-import Links from "./Links.jsx"
+import Links from "./ClickLabPortfolioCard.jsx"
 import Nav from "./Nav.jsx"
 import Hero from "./Hero.jsx"
 import Gallery from "./Gallery.jsx"
