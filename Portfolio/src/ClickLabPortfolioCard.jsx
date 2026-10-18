@@ -16,6 +16,10 @@ function Links() {
         setLikes(likes +1)
     }
 
+    const removeLike = () => {
+        setLikes(0)
+    }
+
     const toggleOpen = () => {
         setOpen(!open)
     }
@@ -36,6 +40,8 @@ function Links() {
             <h2>{name}</h2>
             <p>{text}</p>
             <button onClick={addLike}>Like: {likes}</button>
+            &nbsp;
+            <button onClick={removeLike}>Reset</button>
             &nbsp;
             <button onClick={toggleOpen}>{label}</button>
             &nbsp;

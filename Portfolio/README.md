@@ -14,6 +14,11 @@ A React site that shows the projects I built in Level 2.
 | `CapstonePortfolioCard` | one project: its name, description, and two links | variables inside the component |
 |  |  |  |
 
+
+## What it remembers
+| `Hero` | my hero photos | `heroPhoto`, which calls `imageUrl` | which photo is showing, and whether it is in color |
+| `ClickLabPortfolioCard` | one project: its name, description, and two links | variables inside the component | its likes, and whether it shows more |
+
 ## What I'm adding next
 
 -- Color and Black and White buttons on my hero

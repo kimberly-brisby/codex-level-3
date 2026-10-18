@@ -6,10 +6,17 @@ function HelloWorld() {
   const description = "An introduction about myself."
   const liveUrl = "https://kimberly-brisby.github.io/hello-world-2026/"
   const repoUrl = "https://github.com/kimberly-brisby/hello-world-2026.git"
+
   const [likes, setLikes] = useState(0)
+
   const addLike = () => {
     setLikes(likes + 1)
   }
+
+  const removeLike = () => {
+        setLikes(0)
+    }
+
   return (
     <article className="card-jade">
       <h2>{name}</h2>
@@ -18,6 +25,8 @@ function HelloWorld() {
         <a role="button"href={liveUrl}>"See it live</a>   <a role="button" href={repoUrl}>Read the code</a>
       </p>
       <button onClick={addLike}>Like: {likes}</button>
+      &nbsp;
+      <button onClick={removeLike}>Reset</button>
     </article>
   )
 }

@@ -52,6 +52,10 @@ const moreBlur = () => {
   setBlur(blur + 100)
 }
 
+const removeBlur = () => {
+  setBlur(0)
+}
+
 
 
  const [src, alt] = heroPhoto(photos[index], 1200, 500, saturation, descriptions[index])
@@ -64,15 +68,17 @@ const moreBlur = () => {
       </div>
       <p>
         <p>Photo {index + 1} of {photos.length}</p>
-        <button onClick={previousPhoto}>Previous</button>
+        <button onClick={previousPhoto}>Previous Image</button>
         &nbsp;
-        <button onClick={nextPhoto}>Next</button>
+        <button onClick={nextPhoto}>Next Image</button>
         &nbsp;
-        <button onClick={showColor}>Color</button>
+        <button onClick={showColor}>Add Color</button>
         &nbsp;
         <button onClick={showBlackAndWhite}>Black and White</button>
         &nbsp;
-        <button onClick={moreBlur}>More Blur</button>
+        <button onClick={moreBlur}>Make it Blur</button>
+        &nbsp;
+        <button onClick={removeBlur}>Remove Blur</button>
       </p>
     </>
   )

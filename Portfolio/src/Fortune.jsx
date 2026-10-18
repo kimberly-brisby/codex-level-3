@@ -23,7 +23,7 @@ function Fortune() {
   return (
     <div>
       <p>{fortunes[index]}</p>
-      <button onClick={newFortune}>New Fortune</button>
+      <button onClick={newFortune}>What's Next</button>
     </div>
   )
     
