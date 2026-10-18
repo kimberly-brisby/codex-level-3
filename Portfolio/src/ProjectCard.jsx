@@ -1,12 +1,7 @@
 import { useState } from "react"
 
-let name = "Click Lab"
-let description = "A page of buttons that count, change, and react to click."
-let details = "I built it in Level 2 to practice click listeners."
-let repoUrl = "https://github.com/kimberly-brisby"
-let liveUrl = "https://kimberly-brisby.github.io/Capstone-level-2/"
 
-function ProjectCard() {
+function ProjectCard({project}) {
     
 
     const [likes, setLikes] = useState(0)
@@ -24,9 +19,9 @@ function ProjectCard() {
         setOpen(!open)
     }
 
-    let text = description
+    let text = project.description
     if(open){
-        text = description + "" + details
+        text = project.description + "" + project.details
     }
 
     let label = "Show More"
@@ -37,7 +32,7 @@ function ProjectCard() {
 
     return (
         <article>
-            <h2>{name}</h2>
+            <h2>{project.name}</h2>
             <p>{text}</p>
             <button onClick={addLike}>Like: {likes}</button>
             &nbsp;
@@ -45,7 +40,7 @@ function ProjectCard() {
             &nbsp;
             <button onClick={toggleOpen}>{label}</button>
             &nbsp;
-            <a href="{liveUrl}">See it live</a>.<a href="{repoUrl}">Read the code</a>
+            <a href="{project.liveUrl}">See it live</a>.<a href="{project.repoUrl}">Read the code</a>
         </article>
 
     )

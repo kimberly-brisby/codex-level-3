@@ -36,7 +36,7 @@ function App() {
         <Gallery />
       </div>
       <Contact />
-      <ProjectCard />
+      <ProjectCard project={projects[1]} />
       <Links />
       <Footer />
     </div>
