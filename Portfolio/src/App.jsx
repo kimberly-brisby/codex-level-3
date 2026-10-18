@@ -13,6 +13,7 @@ import Links from "./Links.jsx"
 import Nav from "./Nav.jsx"
 import Hero from "./Hero.jsx"
 import Gallery from "./Gallery.jsx"
+import ProjectCard from "./ProjectCard.jsx"
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Gallery />
       </div>
       <Contact />
+      <ProjectCard />
       <Links />
       <Footer />
     </div>
