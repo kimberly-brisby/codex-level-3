@@ -3,6 +3,9 @@ import heroPhoto from './heroPhoto.js'
 
 import './hero.css'
 
+let blur = 0
+
+
 function Hero() {
 const photos = [
   "photo-1522383225653-ed111181a951?",
@@ -19,6 +22,7 @@ const descriptions = [
 
 const [saturation, setSaturation] = useState(0)
 const [index, setIndex] = useState(0)
+const [blur, setBlur] = useState(0)
 
 const nextPhoto = () => {
     if (index === photos.length - 1) {
@@ -44,6 +48,11 @@ const showBlackAndWhite = () => {
   setSaturation(-100)
 }
 
+const moreBlur = () => {
+  setBlur(blur + 100)
+}
+
+
 
  const [src, alt] = heroPhoto(photos[index], 1200, 500, saturation, descriptions[index])
 
@@ -51,7 +60,7 @@ const showBlackAndWhite = () => {
  return (
     <>
       <div className="hero">
-        <img src={src} alt={alt} />
+        <img src={src +"&blur=" + blur} alt={alt} />
       </div>
       <p>
         <p>Photo {index + 1} of {photos.length}</p>
@@ -62,6 +71,8 @@ const showBlackAndWhite = () => {
         <button onClick={showColor}>Color</button>
         &nbsp;
         <button onClick={showBlackAndWhite}>Black and White</button>
+        &nbsp;
+        <button onClick={moreBlur}>More Blur</button>
       </p>
     </>
   )
